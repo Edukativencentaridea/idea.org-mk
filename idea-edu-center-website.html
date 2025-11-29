@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИДЕА Едукативен Центар Скопје</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5dd3c0 0%, #4ecdc4 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            background: #3d4e5c;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #5dd3c0;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #3d4e5c;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .mission-vision-goals {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #4ecdc4;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .card ul {
+            list-style-position: inside;
+            color: #555;
+        }
+
+        .card ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .activity-item {
+            background: white;
+            padding: 1.5rem;
+            border-left: 4px solid #4ecdc4;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #3d4e5c;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-section {
+            text-align: center;
+        }
+
+        .team-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-feature {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #3d4e5c;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffed4e;
+            color: #3d4e5c;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #ffe119;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .logo-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-header">
+                <img src="https://i.imgur.com/your-uploaded-logo.png" alt="ИДЕА Лого" class="logo">
+                <div>
+                    <h1>ИДЕА Едукативен Центар</h1>
+                    <p>Образование за подобра иднина</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Дома</a></li>
+            <li><a href="#mission">Мисија</a></li>
+            <li><a href="#activities">Активности</a></li>
+            <li><a href="#programs">Програми</a></li>
+            <li><a href="#projects">Проекти</a></li>
+            <li><a href="#team">Тим</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h2>Добредојдовте во ИДЕА Едукативен Центар Скопје</h2>
+            <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                ИДЕА Едукативен Центар Скопје е здружение кое ја промовира креативноста, здравите животни стилови и зачувувањето на животната средина преку активности базирани на неформално образование.
+            </p>
+        </div>
+    </section>
+
+    <section id="mission">
+        <div class="container">
+            <h2>Нашите Вредности</h2>
+            <div class="mission-vision-goals">
+                <div class="card">
+                    <h3>Мисија</h3>
+                    <p>Нашата мисија е да создадеме средина во која децата, младите и граѓаните имаат еднаква можност да учат, да растат и активно да учествуваат во заедницата. ИДЕА Скопје работи на развој на лични, социјални и професионални вештини преку современи едукативни практики и вредности како толеранција, дијалог и меѓусебна поддршка.</p>
+                </div>
+                <div class="card">
+                    <h3>Визија</h3>
+                    <p>Да изградиме општество во кое младите и граѓаните се активни, информирани и подготвени да придонесуваат кон позитивни промени. Стремиме кон заедница која ги почитува различностите, го негува здравиот животен стил, ги вреднува културните достигнувања и обезбедува простор за раст и развој.</p>
+                </div>
+                <div class="card">
+                    <h3>Цели</h3>
+                    <ul>
+                        <li>Развој на животни и креативни вештини</li>
+                        <li>Поттикнување активно учество во заедницата</li>
+                        <li>Подигање на свеста за различностите</li>
+                        <li>Креирање едукативни содржини</li>
+                        <li>Поддршка на духовниот и физичкиот развој</li>
+                        <li>Развивање способности за вработување</li>
+                        <li>Унапредување преку неформално образование</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities">
+        <div class="container">
+            <h2>Наши Активности</h2>
+            <div class="activities-grid">
+                <div class="activity-item">
+                    <strong>Обуки и Семинари</strong>
+                    <p>Организирање обуки, семинари, конференции, работилници, курсеви и летни кампови</p>
+                </div>
+                <div class="activity-item">
+                    <strong>Истражувања</strong>
+                    <p>Спроведување истражувања, трибини, дебати и јавни настани</p>
+                </div>
+                <div class="activity-item">
+                    <strong>Соработка</strong>
+                    <p>Соработка со домашни и меѓународни здруженија, институции и организации</p>
+                </div>
+                <div class="activity-item">
+                    <strong>Хуманитарни Акции</strong>
+                    <p>Хуманитарни акции и поддршка за социјално ранливи групи</p>
+                </div>
+                <div class="activity-item">
+                    <strong>Животна Средина</strong>
+                    <p>Активности за заштита на животната средина и еколошка свест</p>
+                </div>
+                <div class="activity-item">
+                    <strong>Младинска Работа</strong>
+                    <p>Промовирање и застапување на младинската работа и неформалното образование</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs">
+        <div class="container">
+            <h2>Програми</h2>
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <h3>Инбокс Тренинг Центар</h3>
+                <p>Инбокс Тренинг Центар е наша програма посветена на развој на професионални вештини и компетенции. Преку специјализирани обуки, семинари и практични работилници, ја подготвуваме младата генерација за успешна кариера и активно учество на пазарот на трудот.</p>
+                <a href="#" class="cta-button">Дознај повеќе</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Наши Проекти</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Еко Свест</h3>
+                    <p><strong>Цел:</strong> Подигнување на јавната свест за значењето на чистата природна средина и последиците од загадувањето</p>
+                    <p><strong>Активности:</strong> 3 едукативни работилници со 54 учесници, онлајн кампања која информираше над 800 граѓани</p>
+                    <p><strong>Резултати:</strong> Успешно подигната свест кај младите за зачувување на животната средина и значењето на чистиот воздух</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Еко Брикети</h3>
+                    <p><strong>Цел:</strong> Обуки за користење на цврсти горива, намалување на загадувањето и зголемување на домашната заштеда</p>
+                    <p><strong>Активности:</strong> 20 работилници во урбани и рурални заедници во општина Бутел, практични демонстрации за изработка на еко-брикети</p>
+                    <p><strong>Резултати:</strong> Формирана напредна група, зголемена еколошка свест, голем интерес за искористување на био отпадот</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Позитивни Примери - Намалување на Стереотипите</h3>
+                    <p><strong>Цел:</strong> Намалување на родовите стереотипи преку промоција на позитивни примери од ИТ секторот</p>
+                    <p><strong>Активности:</strong> Работилници со млади девојки, менторство со успешни жени програмери, онлајн кампања</p>
+                    <p><strong>Резултати:</strong> Зголемена застапеност на девојки во ИТ секторот, рушење на стереотипите за "машки" и "женски" професии</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>The New Wave</h3>
+                    <p><strong>Поддршка:</strong> European Youth Foundation (EYF)</p>
+                    <p><strong>Цел:</strong> Социјална инклузија на млади од рурални области од 12 европски земји</p>
+                    <p><strong>Резултати:</strong> Јакнење на капацитетите на млади од рурални области, размена на искуства, подигната свест за социјална инклузија</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2>Наш Тим</h2>
+            <p style="max-width: 800px; margin: 0 auto 2rem;">ИДЕА е составена од посветен тим на професионалци, обучувачи, младински работници и волонтери кои веруваат во моќта на неформалното образование и младинската партиципација.</p>
+            
+            <div class="team-features">
+                <div class="team-feature">
+                    <h3>Мотивирани</h3>
+                    <p>Силна мотивација да создадеме позитивни промени</p>
+                </div>
+                <div class="team-feature">
+                    <h3>Професионални</h3>
+                    <p>Пристап заснован на професионалност, етичност и инклузивност</p>
+                </div>
+                <div class="team-feature">
+                    <h3>Посветени</h3>
+                    <p>Фокус на потребите на младите и заедницата</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ИДЕА Едукативен Центар Скопје. Сите права задржани.</p>
+            <p>Образование • Инклузија • Развој</p>
+        </div>
+    </footer>
+</body>
+</html>
